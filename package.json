@@ -1,0 +1,46 @@
+{
+  "name": "@local/dsh-nanally-theme",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "娜娜莉主题：定制开场、原画彩色星点吸附、动态壁纸与半透明界面。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "license": "UNLICENSED",
+  "author": "这这莉是猫不是虎",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AemChisa/DSH-nanally-startup-animation.git"
+  },
+  "homepage": "https://github.com/AemChisa/DSH-nanally-startup-animation#readme",
+  "bugs": {
+    "url": "https://github.com/AemChisa/DSH-nanally-startup-animation/issues"
+  }
+}

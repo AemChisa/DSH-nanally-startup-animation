@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const get=name=>fs.readFileSync(path.join(root,name));
+let client=get('src/client.template.js').toString('utf8');
+for(const [key,value]of [['INTRO','data:video/mp4;base64,'+get('assets/opening.mp4').toString('base64')],['WALLPAPER','data:video/mp4;base64,'+get('assets/wallpaper.mp4').toString('base64')],['CSS',get('src/theme.css').toString('utf8')]])client=client.replace("'__NANALLY_"+key+"__'",JSON.stringify(value));
+if(/__NANALLY_/.test(client))throw Error('Missing asset');
+fs.writeFileSync(path.join(root,'client.js'),client);
+const pkg=JSON.parse(get('package.json'));
+const names=['package.json','client.js','index.js','cordis.patch.yml','icon.svg','locale/zh.json','locale/en.json','README.md'];
+const files=Object.fromEntries(names.map(name=>[name,crypto.createHash('sha256').update(get(name)).digest('hex')]));
+fs.writeFileSync(path.join(root,'checksums.json'),JSON.stringify({package:pkg.name,version:pkg.version,files},null,2)+'\n');
+console.log('Built '+pkg.name+' '+pkg.version+' ('+Buffer.byteLength(client)+' bytes)');

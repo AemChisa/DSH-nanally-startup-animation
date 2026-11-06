@@ -1,0 +1,31 @@
+html.dsh-nanally,html.dsh-nanally body{background:#050c19!important}
+html.dsh-nanally #root{position:relative;z-index:1;background:transparent!important;--dsw-alias-bg-base:rgba(6,16,33,var(--nanally-alpha,.26));--dsw-specific-sidebar-fill:rgba(6,16,33,calc(var(--nanally-alpha,.26) + .04));--dsw-specific-input-major:rgba(6,16,33,calc(var(--nanally-alpha,.26) + .08));--dsw-alias-bg-layer-1:rgba(6,16,33,calc(var(--nanally-alpha,.26) + .08));--dsw-alias-label-primary:#edf2fb;--dsw-alias-label-secondary:#c1cfe2;--dsw-alias-label-caption:#9eb1cb;--dsw-alias-border-l2:#c1d5f02e;--dsw-alias-button-primary-fill:#bd365f;--dsw-alias-button-primary-hover:#d64973}
+.nanally-wall{position:fixed;inset:0;z-index:0;background:#050c19;pointer-events:none;overflow:hidden}
+.nanally-wall video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(var(--nanally-blur,0px))}
+.nanally-wall::after{content:'';position:absolute;inset:0;background:#040b19;opacity:var(--nanally-dim,.08)}
+.nanally-credit{position:fixed;right:27px;bottom:20px;z-index:2;pointer-events:none;font:400 12px/18px 'Microsoft YaHei','Segoe UI',sans-serif;letter-spacing:.45px;color:#efdde6;opacity:.72;text-shadow:0 1px 3px #150512}
+html.dsh-nanally #root{--dsw-alias-button-elevated-fill:rgba(92,126,172,.12);--dsw-alias-button-floating-fill:#142c49;--dsw-alias-button-floating-hover:rgba(130,168,214,.22);--dsw-alias-button-ghost-active-fill:rgba(130,168,214,.22)}
+.nanally-boot{position:fixed;inset:0;background:#000;z-index:2147400000;pointer-events:none}
+.nanally-splash{position:fixed;inset:0;z-index:2147400001;overflow:hidden;background:transparent}
+.nanally-splash video,.nanally-splash canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.nanally-splash video{background:#000}
+.nanally-splash canvas{pointer-events:none}
+.nanally-splash-controls{position:absolute;right:22px;bottom:24px;display:flex;gap:10px}
+.nanally-splash-controls button{padding:7px 12px;border:1px solid #f3dbe733;border-radius:6px;background:#08091688;color:#f3e5ec;font:12px 'Microsoft YaHei',sans-serif;cursor:pointer;backdrop-filter:blur(8px)}
+.nanally-page{height:100%;overflow:auto;padding:72px 32px 40px;color:var(--dsw-alias-label-primary);font-family:'Microsoft YaHei','Segoe UI',sans-serif}
+.nanally-page-inner{max-width:740px;margin:auto}
+.nanally-page header{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:28px}
+.nanally-page h1{font:italic 700 40px Georgia,serif;margin:0;background:linear-gradient(105deg,#ff8d9c,#ef476f,#ad1f4f);color:transparent;background-clip:text}
+.nanally-page header p{font-size:12px;letter-spacing:.1em;margin:10px 0}
+.nanally-page section{margin:18px 0;padding:22px;background:rgba(7,17,34,.65);border:1px solid #c4d6f026;border-radius:14px}
+.nanally-page h2{margin:0 0 20px;font-size:16px;font-weight:500}
+.nanally-page button{border:1px solid #ed91ad44;background:#bc345b22;border-radius:7px;color:inherit;padding:9px 14px;cursor:pointer;font:inherit;font-size:13px}
+.nanally-page button:hover{background:#bc345b44}
+.nanally-setting{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:19px 0;font-size:14px}
+.nanally-setting>span{min-width:120px}.nanally-setting input[type=range]{width:55%;accent-color:#e74774}.nanally-setting input[type=checkbox]{accent-color:#e74774;width:18px;height:18px}
+.nanally-page p{font-size:12px;line-height:1.9;opacity:.76}
+/* The installed 0.2.1-rc.5 exports these HeroShell classes. Only presentation changes. */
+html.dsh-nanally .WOwLGG_headline>*{display:none!important}
+html.dsh-nanally .WOwLGG_headline{flex-wrap:nowrap}
+html.dsh-nanally .WOwLGG_headline::after{content:'“欢迎回家，鉴定师！”';font:400 clamp(20px,2.3vw,36px)/1.5 'Microsoft YaHei',sans-serif;letter-spacing:.08em;white-space:nowrap;color:#eef4ff;text-shadow:0 2px 14px #060b2e88}
+@media(prefers-reduced-motion:reduce){.nanally-wall video{animation:none}}

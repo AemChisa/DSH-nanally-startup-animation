@@ -1,0 +1,14 @@
+{
+  "package": "@local/dsh-nanally-theme",
+  "version": "1.1.0",
+  "files": {
+    "package.json": "7bd2840600f2195c90cea2b556fb42fc5f3e139da6d8e9534d56653a328d6722",
+    "client.js": "1d3db66f427de2e33dda21b21ce88d7ea2516cb2f67406057e3285abb60aaca2",
+    "index.js": "5b2df8275a78de7a341e1ec852d93a8d31e85501c46f9359e8136d7e3033bbef",
+    "cordis.patch.yml": "eb7859222af648968a3383eaf5fbfcb9fb3255d6bc9f2da147bbfe0a3de8515d",
+    "icon.svg": "3bf290f367ed8d1c5435b36aaea0d8ad2685cb8afbe2fb920a5c571f744ac7f4",
+    "locale/zh.json": "78e4454ac07ee4324a3811f4ef8ab441ed235f660f7eac03f091e22e9218b0bf",
+    "locale/en.json": "64d7152dbae4fcb51e0fd8063f7ed9c37491b82686e0dc2f02bec9283fc7be97",
+    "README.md": "cb6f61298f9d5195f113f51de4631b83e52c555040bba1efd3625536d4b6de63"
+  }
+}
